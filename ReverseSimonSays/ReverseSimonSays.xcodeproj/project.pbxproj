@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8621A391CB329950032EBF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A381CB329950032EBF7 /* main.m */; };
+		A8621A3C1CB329950032EBF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A3B1CB329950032EBF7 /* AppDelegate.m */; };
+		A8621A3F1CB329950032EBF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A3E1CB329950032EBF7 /* ViewController.m */; };
+		A8621A421CB329950032EBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8621A401CB329950032EBF7 /* Main.storyboard */; };
+		A8621A441CB329950032EBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8621A431CB329950032EBF7 /* Assets.xcassets */; };
+		A8621A471CB329950032EBF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8621A451CB329950032EBF7 /* LaunchScreen.storyboard */; };
+		A8621A521CB329950032EBF7 /* ReverseSimonSaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A511CB329950032EBF7 /* ReverseSimonSaysTests.m */; };
+		A8621A5D1CB329950032EBF7 /* ReverseSimonSaysUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A5C1CB329950032EBF7 /* ReverseSimonSaysUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8621A4E1CB329950032EBF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8621A2C1CB329950032EBF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8621A331CB329950032EBF7;
+			remoteInfo = ReverseSimonSays;
+		};
+		A8621A591CB329950032EBF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8621A2C1CB329950032EBF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8621A331CB329950032EBF7;
+			remoteInfo = ReverseSimonSays;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8621A341CB329950032EBF7 /* ReverseSimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseSimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8621A381CB329950032EBF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8621A3A1CB329950032EBF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8621A3B1CB329950032EBF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8621A3D1CB329950032EBF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A8621A3E1CB329950032EBF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A8621A411CB329950032EBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8621A431CB329950032EBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8621A461CB329950032EBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8621A481CB329950032EBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8621A4D1CB329950032EBF7 /* ReverseSimonSaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseSimonSaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8621A511CB329950032EBF7 /* ReverseSimonSaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseSimonSaysTests.m; sourceTree = "<group>"; };
+		A8621A531CB329950032EBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8621A581CB329950032EBF7 /* ReverseSimonSaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseSimonSaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8621A5C1CB329950032EBF7 /* ReverseSimonSaysUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseSimonSaysUITests.m; sourceTree = "<group>"; };
+		A8621A5E1CB329950032EBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8621A311CB329950032EBF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8621A4A1CB329950032EBF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8621A551CB329950032EBF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8621A2B1CB329950032EBF7 = {
+			isa = PBXGroup;
+			children = (
+				A8621A361CB329950032EBF7 /* ReverseSimonSays */,
+				A8621A501CB329950032EBF7 /* ReverseSimonSaysTests */,
+				A8621A5B1CB329950032EBF7 /* ReverseSimonSaysUITests */,
+				A8621A351CB329950032EBF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8621A351CB329950032EBF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8621A341CB329950032EBF7 /* ReverseSimonSays.app */,
+				A8621A4D1CB329950032EBF7 /* ReverseSimonSaysTests.xctest */,
+				A8621A581CB329950032EBF7 /* ReverseSimonSaysUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8621A361CB329950032EBF7 /* ReverseSimonSays */ = {
+			isa = PBXGroup;
+			children = (
+				A8621A3A1CB329950032EBF7 /* AppDelegate.h */,
+				A8621A3B1CB329950032EBF7 /* AppDelegate.m */,
+				A8621A3D1CB329950032EBF7 /* ViewController.h */,
+				A8621A3E1CB329950032EBF7 /* ViewController.m */,
+				A8621A401CB329950032EBF7 /* Main.storyboard */,
+				A8621A431CB329950032EBF7 /* Assets.xcassets */,
+				A8621A451CB329950032EBF7 /* LaunchScreen.storyboard */,
+				A8621A481CB329950032EBF7 /* Info.plist */,
+				A8621A371CB329950032EBF7 /* Supporting Files */,
+			);
+			path = ReverseSimonSays;
+			sourceTree = "<group>";
+		};
+		A8621A371CB329950032EBF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8621A381CB329950032EBF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8621A501CB329950032EBF7 /* ReverseSimonSaysTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8621A511CB329950032EBF7 /* ReverseSimonSaysTests.m */,
+				A8621A531CB329950032EBF7 /* Info.plist */,
+			);
+			path = ReverseSimonSaysTests;
+			sourceTree = "<group>";
+		};
+		A8621A5B1CB329950032EBF7 /* ReverseSimonSaysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8621A5C1CB329950032EBF7 /* ReverseSimonSaysUITests.m */,
+				A8621A5E1CB329950032EBF7 /* Info.plist */,
+			);
+			path = ReverseSimonSaysUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8621A331CB329950032EBF7 /* ReverseSimonSays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8621A611CB329950032EBF7 /* Build configuration list for PBXNativeTarget "ReverseSimonSays" */;
+			buildPhases = (
+				A8621A301CB329950032EBF7 /* Sources */,
+				A8621A311CB329950032EBF7 /* Frameworks */,
+				A8621A321CB329950032EBF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReverseSimonSays;
+			productName = ReverseSimonSays;
+			productReference = A8621A341CB329950032EBF7 /* ReverseSimonSays.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8621A4C1CB329950032EBF7 /* ReverseSimonSaysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8621A641CB329950032EBF7 /* Build configuration list for PBXNativeTarget "ReverseSimonSaysTests" */;
+			buildPhases = (
+				A8621A491CB329950032EBF7 /* Sources */,
+				A8621A4A1CB329950032EBF7 /* Frameworks */,
+				A8621A4B1CB329950032EBF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8621A4F1CB329950032EBF7 /* PBXTargetDependency */,
+			);
+			name = ReverseSimonSaysTests;
+			productName = ReverseSimonSaysTests;
+			productReference = A8621A4D1CB329950032EBF7 /* ReverseSimonSaysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8621A571CB329950032EBF7 /* ReverseSimonSaysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8621A671CB329950032EBF7 /* Build configuration list for PBXNativeTarget "ReverseSimonSaysUITests" */;
+			buildPhases = (
+				A8621A541CB329950032EBF7 /* Sources */,
+				A8621A551CB329950032EBF7 /* Frameworks */,
+				A8621A561CB329950032EBF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8621A5A1CB329950032EBF7 /* PBXTargetDependency */,
+			);
+			name = ReverseSimonSaysUITests;
+			productName = ReverseSimonSaysUITests;
+			productReference = A8621A581CB329950032EBF7 /* ReverseSimonSaysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8621A2C1CB329950032EBF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "António Lima";
+				TargetAttributes = {
+					A8621A331CB329950032EBF7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A8621A4C1CB329950032EBF7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A8621A331CB329950032EBF7;
+					};
+					A8621A571CB329950032EBF7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A8621A331CB329950032EBF7;
+					};
+				};
+			};
+			buildConfigurationList = A8621A2F1CB329950032EBF7 /* Build configuration list for PBXProject "ReverseSimonSays" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8621A2B1CB329950032EBF7;
+			productRefGroup = A8621A351CB329950032EBF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8621A331CB329950032EBF7 /* ReverseSimonSays */,
+				A8621A4C1CB329950032EBF7 /* ReverseSimonSaysTests */,
+				A8621A571CB329950032EBF7 /* ReverseSimonSaysUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8621A321CB329950032EBF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8621A471CB329950032EBF7 /* LaunchScreen.storyboard in Resources */,
+				A8621A441CB329950032EBF7 /* Assets.xcassets in Resources */,
+				A8621A421CB329950032EBF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8621A4B1CB329950032EBF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8621A561CB329950032EBF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8621A301CB329950032EBF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8621A3F1CB329950032EBF7 /* ViewController.m in Sources */,
+				A8621A3C1CB329950032EBF7 /* AppDelegate.m in Sources */,
+				A8621A391CB329950032EBF7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8621A491CB329950032EBF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8621A521CB329950032EBF7 /* ReverseSimonSaysTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8621A541CB329950032EBF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8621A5D1CB329950032EBF7 /* ReverseSimonSaysUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8621A4F1CB329950032EBF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8621A331CB329950032EBF7 /* ReverseSimonSays */;
+			targetProxy = A8621A4E1CB329950032EBF7 /* PBXContainerItemProxy */;
+		};
+		A8621A5A1CB329950032EBF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8621A331CB329950032EBF7 /* ReverseSimonSays */;
+			targetProxy = A8621A591CB329950032EBF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8621A401CB329950032EBF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8621A411CB329950032EBF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8621A451CB329950032EBF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8621A461CB329950032EBF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8621A5F1CB329950032EBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A8621A601CB329950032EBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8621A621CB329950032EBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReverseSimonSays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bungs.inc.ReverseSimonSays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A8621A631CB329950032EBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReverseSimonSays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bungs.inc.ReverseSimonSays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A8621A651CB329950032EBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ReverseSimonSaysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bungs.inc.ReverseSimonSaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReverseSimonSays.app/ReverseSimonSays";
+			};
+			name = Debug;
+		};
+		A8621A661CB329950032EBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ReverseSimonSaysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bungs.inc.ReverseSimonSaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReverseSimonSays.app/ReverseSimonSays";
+			};
+			name = Release;
+		};
+		A8621A681CB329950032EBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReverseSimonSaysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bungs.inc.ReverseSimonSaysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReverseSimonSays;
+			};
+			name = Debug;
+		};
+		A8621A691CB329950032EBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReverseSimonSaysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bungs.inc.ReverseSimonSaysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReverseSimonSays;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8621A2F1CB329950032EBF7 /* Build configuration list for PBXProject "ReverseSimonSays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8621A5F1CB329950032EBF7 /* Debug */,
+				A8621A601CB329950032EBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8621A611CB329950032EBF7 /* Build configuration list for PBXNativeTarget "ReverseSimonSays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8621A621CB329950032EBF7 /* Debug */,
+				A8621A631CB329950032EBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A8621A641CB329950032EBF7 /* Build configuration list for PBXNativeTarget "ReverseSimonSaysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8621A651CB329950032EBF7 /* Debug */,
+				A8621A661CB329950032EBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A8621A671CB329950032EBF7 /* Build configuration list for PBXNativeTarget "ReverseSimonSaysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8621A681CB329950032EBF7 /* Debug */,
+				A8621A691CB329950032EBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8621A2C1CB329950032EBF7 /* Project object */;
+}
