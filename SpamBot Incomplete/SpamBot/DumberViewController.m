@@ -21,15 +21,16 @@
 }
 
 - (IBAction)segueMeForward:(id)sender {
-    [self performSegueWithIdentifier:@"Dumber2Dumb" sender:nil];
+
+    // TODO
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"Dumber2Dumb"]) {
-        DumbViewController *controller = (DumbViewController *)segue.destinationViewController;
-        controller->myString = _myTextField.text;
-    }
+    
+    // TODO
+    
 }
 
 @end

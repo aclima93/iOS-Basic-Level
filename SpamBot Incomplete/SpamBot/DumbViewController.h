@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import <MessageUI/MessageUI.h>
+// TODO
 
-@interface DumbViewController : UIViewController <MFMailComposeViewControllerDelegate> {
+@interface DumbViewController : UIViewController /* TODO */ {
 @public NSString *myString;
 }
 

@@ -40,7 +40,6 @@
                     </view>
                     <connections>
                         <outlet property="myTextField" destination="gaG-Mr-Mtb" id="bO0-b7-QvK"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="Dumber2Dumb" id="MOv-Rw-Tza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cpx-0P-ms5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,7 +83,6 @@
                     </view>
                     <connections>
                         <outlet property="myLabel" destination="ji8-ly-wt4" id="DGM-qJ-lP5"/>
-                        <segue destination="h1j-LJ-c1l" kind="presentation" identifier="Dumb2Dumber" modalTransitionStyle="flipHorizontal" id="N3V-3H-8kJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
