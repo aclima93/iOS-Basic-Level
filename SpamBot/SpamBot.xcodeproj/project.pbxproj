@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8311DE31CB5186F00CD327A /* DumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8311DE21CB5186F00CD327A /* DumberViewController.m */; };
 		A8621A781CB329B50032EBF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A771CB329B50032EBF7 /* main.m */; };
 		A8621A7B1CB329B50032EBF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A7A1CB329B50032EBF7 /* AppDelegate.m */; };
-		A8621A7E1CB329B50032EBF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A7D1CB329B50032EBF7 /* ViewController.m */; };
+		A8621A7E1CB329B50032EBF7 /* DumbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8621A7D1CB329B50032EBF7 /* DumbViewController.m */; };
 		A8621A811CB329B50032EBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8621A7F1CB329B50032EBF7 /* Main.storyboard */; };
 		A8621A831CB329B50032EBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8621A821CB329B50032EBF7 /* Assets.xcassets */; };
 		A8621A861CB329B50032EBF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8621A841CB329B50032EBF7 /* LaunchScreen.storyboard */; };
@@ -35,12 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8311DE11CB5186F00CD327A /* DumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumberViewController.h; sourceTree = "<group>"; };
+		A8311DE21CB5186F00CD327A /* DumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DumberViewController.m; sourceTree = "<group>"; };
 		A8621A731CB329B50032EBF7 /* SpamBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpamBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8621A771CB329B50032EBF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8621A791CB329B50032EBF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8621A7A1CB329B50032EBF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A8621A7C1CB329B50032EBF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A8621A7D1CB329B50032EBF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A8621A7C1CB329B50032EBF7 /* DumbViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DumbViewController.h; sourceTree = "<group>"; };
+		A8621A7D1CB329B50032EBF7 /* DumbViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DumbViewController.m; sourceTree = "<group>"; };
 		A8621A801CB329B50032EBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8621A821CB329B50032EBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8621A851CB329B50032EBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,13 +106,15 @@
 			children = (
 				A8621A791CB329B50032EBF7 /* AppDelegate.h */,
 				A8621A7A1CB329B50032EBF7 /* AppDelegate.m */,
-				A8621A7C1CB329B50032EBF7 /* ViewController.h */,
-				A8621A7D1CB329B50032EBF7 /* ViewController.m */,
+				A8621A7C1CB329B50032EBF7 /* DumbViewController.h */,
+				A8621A7D1CB329B50032EBF7 /* DumbViewController.m */,
 				A8621A7F1CB329B50032EBF7 /* Main.storyboard */,
 				A8621A821CB329B50032EBF7 /* Assets.xcassets */,
 				A8621A841CB329B50032EBF7 /* LaunchScreen.storyboard */,
 				A8621A871CB329B50032EBF7 /* Info.plist */,
 				A8621A761CB329B50032EBF7 /* Supporting Files */,
+				A8311DE11CB5186F00CD327A /* DumberViewController.h */,
+				A8311DE21CB5186F00CD327A /* DumberViewController.m */,
 			);
 			path = SpamBot;
 			sourceTree = "<group>";
@@ -270,9 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8621A7E1CB329B50032EBF7 /* ViewController.m in Sources */,
+				A8621A7E1CB329B50032EBF7 /* DumbViewController.m in Sources */,
 				A8621A7B1CB329B50032EBF7 /* AppDelegate.m in Sources */,
 				A8621A781CB329B50032EBF7 /* main.m in Sources */,
+				A8311DE31CB5186F00CD327A /* DumberViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +502,7 @@
 				A8621AA21CB329B50032EBF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8621AA31CB329B50032EBF7 /* Build configuration list for PBXNativeTarget "SpamBotTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				A8621AA51CB329B50032EBF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8621AA61CB329B50032EBF7 /* Build configuration list for PBXNativeTarget "SpamBotUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				A8621AA81CB329B50032EBF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import <MessageUI/MessageUI.h>
 
+@interface DumbViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
 @end
 
