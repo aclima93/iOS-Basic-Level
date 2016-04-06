@@ -6,8 +6,8 @@
 //  Copyright © 2016 António Lima. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface DumberViewController : ViewController
+@interface DumberViewController : UIViewController
 
 @end
