@@ -27,19 +27,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // Reading from NSUserDefaults
-    NSDictionary *myValues = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"MyValues"];
-
-    for(NSString *key in [myValues allKeys]) {
-        NSLog(@"%@",[myValues objectForKey:key]);
-    }
+    // Make a path to the PList in the Documents directory
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *myPListPath = [documentsDirectory stringByAppendingPathComponent:@"MyPList.plist"];
+    
+    // Reading from the PList
+    NSDictionary *myValues = [NSDictionary dictionaryWithContentsOfFile:myPListPath];
     
     // if no data is read
     if( ![myValues count] ){
+        
+        // UIColor cannot be stored in a plist directly as it doesn't extend NSData
         NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:DEFAULT_COLOR];
         myValues = @{ @"text": DEFAULT_TEXT, @"colorData": colorData};
     }
     
+    // converting the NSData to a UIColor again
     UIColor *color = [NSKeyedUnarchiver unarchiveObjectWithData:myValues[@"colorData"]];
     [self changeLabelAndSaveColor:color andText:myValues[@"text"]];
 }
@@ -71,11 +75,19 @@
     [_myLabel setTextColor:color];
     [_myLabel setText:text];
     
-    // Writing to NSUserDefaults
+    // UIColor cannot be stored in a plist directly as it doesn't extend NSData
     NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:color];
     NSDictionary *myValues = myValues = @{ @"text": text, @"colorData": colorData};
-    [[NSUserDefaults standardUserDefaults] setObject:myValues forKey:@"MyValues"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    // Make a path to the PList in the Documents directory
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *myPListPath = [documentsDirectory stringByAppendingPathComponent:@"MyPList.plist"];
+    
+    // Write your dictionary out to the PList in the Documents directory
+    if (![myValues writeToFile:myPListPath atomically:YES]) {
+        NSLog(@"Oops, this shouldn't happen...");
+    }
     
 }
 
