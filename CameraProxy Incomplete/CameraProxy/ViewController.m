@@ -25,42 +25,24 @@
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 
-        [self showMyAlertWithTitle:@"Error" andMessage:@"Device has no camera"];
-    }
-    else {
-
-        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-        
-        picker.delegate = self;
-        picker.allowsEditing = YES;
-        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        
-        [self presentViewController:picker animated:YES completion:NULL];
-    }
+    // TODO
+    
 }
 
 
 - (IBAction)selectPhoto:(UIButton *)sender {
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    // TODO
     
-    [self presentViewController:picker animated:YES completion:NULL];
 }
 
 #pragma mark - Image Picker Controller delegate methods
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    self.imageView.image = chosenImage;
+    // TODO
     
-    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
