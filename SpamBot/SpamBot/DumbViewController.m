@@ -13,11 +13,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [_myLabel setText:myString];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)segueMeBack:(id)sender {
+    [self performSegueWithIdentifier:@"Dumb2Dumber" sender:nil];
 }
 
 - (IBAction)sendSpam:(id)sender {
@@ -29,7 +35,7 @@
         
         // passing data to the email composer
         [mail setSubject:@"!! Viagra 50% off !! *wink*"];
-        [mail setMessageBody:@"According to your browser history, you're gonna love this promotion! ;) ;)" isHTML:NO];
+        [mail setMessageBody:myString isHTML:NO];
         [mail setToRecipients:@[@"aclspam@hotmail.com"]];
 
         [self presentViewController:mail animated:YES completion:NULL];

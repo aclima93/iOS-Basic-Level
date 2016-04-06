@@ -21,7 +21,7 @@
                                 <rect key="frame" x="207" y="285" width="187" height="30"/>
                                 <state key="normal" title="Take me somewhere useful"/>
                                 <connections>
-                                    <action selector="segueMeAway:" destination="h1j-LJ-c1l" eventType="touchUpInside" id="eel-8J-oU4"/>
+                                    <action selector="segueMeForward:" destination="h1j-LJ-c1l" eventType="touchUpInside" id="yVe-fJ-RiM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm a useless view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svn-om-2me">
@@ -30,10 +30,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Lorem ipsum" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gaG-Mr-Mtb">
+                                <rect key="frame" x="248" y="323" width="105" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="myTextField" destination="gaG-Mr-Mtb" id="bO0-b7-QvK"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="Dumber2Dumb" id="MOv-Rw-Tza"/>
                     </connections>
                 </viewController>
@@ -66,9 +72,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ7-Vf-lS1">
+                                <rect key="frame" x="271" y="218" width="58" height="30"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="segueMeBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFn-MJ-Mqe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="ji8-ly-wt4" id="DGM-qJ-lP5"/>
+                        <segue destination="h1j-LJ-c1l" kind="presentation" identifier="Dumb2Dumber" modalTransitionStyle="flipHorizontal" id="N3V-3H-8kJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

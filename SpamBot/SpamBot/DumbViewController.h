@@ -10,7 +10,11 @@
 
 #import <MessageUI/MessageUI.h>
 
-@interface DumbViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@interface DumbViewController : UIViewController <MFMailComposeViewControllerDelegate> {
+@public NSString *myString;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
 
 @end
 

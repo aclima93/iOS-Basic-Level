@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DumbViewController.h"
 
 @interface DumberViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *myTextField;
 
 @end

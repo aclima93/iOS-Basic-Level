@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#define ROOTVIEW [[[UIApplication sharedApplication] keyWindow] rootViewController]
+#define ROOTVIEW [[UIApplication sharedApplication] keyWindow]
 
 @interface AppDelegate ()
 
@@ -19,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSLog(@"didFinishLaunchingWithOptions");
+    [[[ROOTVIEW rootViewController ]view] setBackgroundColor:[UIColor blackColor]];
+    [self doAnUnorthodoxDelay];
+    
     return YES;
 }
 
@@ -27,7 +32,7 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     
     NSLog(@"applicationWillResignActive");
-    [[ROOTVIEW view] setBackgroundColor:[UIColor blueColor]];
+    [[[ROOTVIEW rootViewController ]view] setBackgroundColor:[UIColor blueColor]];
     [self doAnUnorthodoxDelay];
 }
 
@@ -36,7 +41,7 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     NSLog(@"applicationDidEnterBackground");
-    [[ROOTVIEW view] setBackgroundColor:[UIColor greenColor]];
+    [[[ROOTVIEW rootViewController ]view] setBackgroundColor:[UIColor greenColor]];
     [self doAnUnorthodoxDelay];
 }
 
@@ -44,7 +49,7 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     
     NSLog(@"applicationWillEnterForeground");
-    [[ROOTVIEW view] setBackgroundColor:[UIColor yellowColor]];
+    [[[ROOTVIEW rootViewController ]view] setBackgroundColor:[UIColor yellowColor]];
     [self doAnUnorthodoxDelay];
 }
 
@@ -52,7 +57,7 @@
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     
     NSLog(@"applicationDidBecomeActive");
-    [[ROOTVIEW view] setBackgroundColor:[UIColor redColor]];
+    [[[ROOTVIEW rootViewController ]view] setBackgroundColor:[UIColor redColor]];
     [self doAnUnorthodoxDelay];
 }
 
@@ -60,7 +65,7 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     
     NSLog(@"applicationWillTerminate");
-    [[ROOTVIEW view] setBackgroundColor:[UIColor magentaColor]];
+    [[[ROOTVIEW rootViewController ]view] setBackgroundColor:[UIColor magentaColor]];
     [self doAnUnorthodoxDelay];
 }
 

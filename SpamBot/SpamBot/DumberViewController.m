@@ -20,8 +20,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)segueMeAway:(id)sender {
+- (IBAction)segueMeForward:(id)sender {
     [self performSegueWithIdentifier:@"Dumber2Dumb" sender:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Dumber2Dumb"]) {
+        DumbViewController *controller = (DumbViewController *)segue.destinationViewController;
+        controller->myString = _myTextField.text;
+    }
 }
 
 @end
