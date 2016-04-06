@@ -10,6 +10,15 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)resetButtonPressed:(id)sender;
+
+-(IBAction)redButtonPressed:(id)sender;
+
+- (IBAction)greenButtonPressed:(id)sender;
+
+- (IBAction)blueButtonPressed:(id)sender;
+
+-(void)changeLabelAndSaveColor:(UIColor*) color andText:(NSString*) text;
 
 @end
 
