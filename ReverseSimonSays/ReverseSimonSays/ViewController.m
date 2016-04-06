@@ -27,13 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // Make a path to the PList in the Documents directory
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *myPListPath = [documentsDirectory stringByAppendingPathComponent:@"MyPList.plist"];
-
-    // Reading from the PList
-    NSDictionary *myValues = [NSDictionary dictionaryWithContentsOfFile:myPListPath];
+    // Reading from NSUserDefaults
+    NSDictionary *myValues = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"MyValues"];
 
     for(NSString *key in [myValues allKeys]) {
         NSLog(@"%@",[myValues objectForKey:key]);
@@ -41,10 +36,12 @@
     
     // if no data is read
     if( ![myValues count] ){
-        myValues = @{ @"text": DEFAULT_TEXT, @"color": DEFAULT_COLOR};
+        NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:DEFAULT_COLOR];
+        myValues = @{ @"text": DEFAULT_TEXT, @"colorData": colorData};
     }
     
-    [self changeLabelAndSaveColor:myValues[@"color"] andText:myValues[@"text"]];
+    UIColor *color = [NSKeyedUnarchiver unarchiveObjectWithData:myValues[@"colorData"]];
+    [self changeLabelAndSaveColor:color andText:myValues[@"text"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,21 +71,11 @@
     [_myLabel setTextColor:color];
     [_myLabel setText:text];
     
-    // Make a path to the PList in the Documents directory
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *myPListPath = [documentsDirectory stringByAppendingPathComponent:@"MyPList.plist"];
-    
-    // Write your array out to the PList in the Documents directory
-    NSDictionary *myValues = myValues = @{ @"text": text, @"color": color};
-    
-    // Write your dictionary out to the PList in the Documents directory
-    if (![myValues writeToFile:myPListPath atomically:YES]) {
-        NSLog(@"failure");
-    }
-    else{
-        NSLog(@"success");
-    }
+    // Writing to NSUserDefaults
+    NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:color];
+    NSDictionary *myValues = myValues = @{ @"text": text, @"colorData": colorData};
+    [[NSUserDefaults standardUserDefaults] setObject:myValues forKey:@"MyValues"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
 
